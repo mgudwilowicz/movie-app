@@ -4,7 +4,7 @@ def generate_movies_html(movies):
         html_template = f.read()
         html_template = html_template.replace("<head>","<head>\n    <meta charset=\"UTF-8\">")
 
-    html_output = html_template.replace("__TEMPLATE_TITLE__", "Marti Mowi app")
+    html_output = html_template.replace("__TEMPLATE_TITLE__", "My Movie app")
     print(movies)
     output = ''
     for movie in movies.items():
