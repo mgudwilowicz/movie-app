@@ -1,5 +1,5 @@
 def generate_movies_html(movies):
-    """Generates an HTML file by inserting animal data into a template and adding UTF-8 metadata."""
+    """Generates an HTML file displaying the movie collection with posters, titles, and release years."""
     with open("_static/index_template.html", "r", encoding="utf-8") as f:
         html_template = f.read()
         html_template = html_template.replace("<head>","<head>\n    <meta charset=\"UTF-8\">")
@@ -16,7 +16,7 @@ def generate_movies_html(movies):
 
     html_output = html_output.replace("__TEMPLATE_MOVIE_GRID__",output )
 
-    with open("_static/index.html", "w") as f:
+    with open("_static/index.html", "w", encoding="utf-8") as f:
         f.write(html_output)
 
     print('Website was generated successfully.')
@@ -24,6 +24,7 @@ def generate_movies_html(movies):
 
 
 def generate_card(poster, title, year):
+     """Generates an HTML list item with a movie poster, title, and release year."""
     card = ''
     card += '<li>'
     card += '<div class="movie">'
