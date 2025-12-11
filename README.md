@@ -24,14 +24,18 @@ You can add, delete, update, sort, search, generate statistics, and export movie
 
 
 ```text
+
 project/
-│
-├── main.py                 # Main CLI program
-├── movie_storage_sql.py    # SQLite database handling
-├── OMDb_API.py             # OMDb API requests
-├── generate_html.py        # HTML generator
-├── movies.db               # Local SQLite database
-├── .gitignore              # Specifies files
-└── README.md               # Project documentation
+├── main.py                     # Main CLI program
+├── movie_storage_sql.py        # SQLite database handling
+├── OMDb_API.py                 # OMDb API requests
+├── generate_html.py            # HTML generator
+├── _static/                    # Static files for website
+│   ├── index_template.html     # HTML template used to generate index.html
+│   └── index.html              # Generated HTML page with movie collection
+├── movies.db                   # Local SQLite database
+├── .env                        # Environment variables (API keys, config)
+├── .gitignore                  # Specifies files/folders Git should ignore
+└── README.md                   # Project documentation
 
 
