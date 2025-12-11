@@ -184,7 +184,7 @@ def main():
             "9. Movies sorted by year\n"
             "10. Generate html site\n"
             
-            "Enter choice (0-9): "
+            "Enter choice (0-10): "
         ).strip()
 
         try:
