@@ -190,7 +190,7 @@ def main():
         try:
             user_input = int(user_input)
         except ValueError:
-            print("Choose a number between 0 and 8")
+            print("Choose a number between 0 and 10")
             continue
 
         if user_input == 0:

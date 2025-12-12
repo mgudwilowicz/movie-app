@@ -19,12 +19,7 @@ def getMovieByTitle(title):
         year = data['Year']
         rating = data['imdbRating']
         poster = data['Poster']
-        print(name)
-        print(year)
-        print(rating)
-        print(poster)
         return name, year, rating, poster
     else:
         print("Error:", response.status_code)
 
-getMovieByTitle('titanic')

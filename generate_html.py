@@ -8,7 +8,6 @@ def generate_movies_html(movies):
         html_template = html_template.replace("<head>","<head>\n    <meta charset=\"UTF-8\">")
 
     html_output = html_template.replace("__TEMPLATE_TITLE__", "My Movie app")
-    print(movies)
     output = ''
     for movie in movies.items():
         title, info = movie
